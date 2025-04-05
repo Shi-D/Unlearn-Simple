@@ -2,7 +2,7 @@ import os
 from datasets import load_dataset
 from utils import write_json, write_text
 
-os.makedirs('data', exist_ok=True)
+os.makedirs('/lus/eagle/projects/PBML/yingdan/data', exist_ok=True)
 
 for corpus, Corpus in zip(['news', 'books'], ['News', 'Books']):
     for split in ['forget_qa', 'retain_qa', 'forget_qa_icl', 'retain_qa_icl']:
