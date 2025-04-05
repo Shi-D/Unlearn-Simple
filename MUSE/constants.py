@@ -6,24 +6,24 @@ LLAMA_DIR = "meta-llama/Llama-2-7b-hf"
 
 DEFAULT_DATA = {
     'news': {
-        'verbmem_forget_file': "data/news/verbmem/forget.json",
-        'privleak_forget_file': "data/news/privleak/forget.json",
-        'privleak_retain_file': "data/news/privleak/retain.json",
-        'privleak_holdout_file': "data/news/privleak/holdout.json",
-        'knowmem_forget_qa_file': "data/news/knowmem/forget_qa.json",
-        'knowmem_forget_qa_icl_file': "data/news/knowmem/forget_qa_icl.json",
-        'knowmem_retain_qa_file': "data/news/knowmem/retain_qa.json",
-        'knowmem_retain_qa_icl_file': "data/news/knowmem/retain_qa_icl.json",
+        'verbmem_forget_file': "/lus/eagle/projects/PBML/yingdan/data/news/verbmem/forget.json",
+        'privleak_forget_file': "/lus/eagle/projects/PBML/yingdan/data/news/privleak/forget.json",
+        'privleak_retain_file': "/lus/eagle/projects/PBML/yingdan/data/news/privleak/retain.json",
+        'privleak_holdout_file': "/lus/eagle/projects/PBML/yingdan/data/news/privleak/holdout.json",
+        'knowmem_forget_qa_file': "/lus/eagle/projects/PBML/yingdan/data/news/knowmem/forget_qa.json",
+        'knowmem_forget_qa_icl_file': "/lus/eagle/projects/PBML/yingdan/data/news/knowmem/forget_qa_icl.json",
+        'knowmem_retain_qa_file': "/lus/eagle/projects/PBML/yingdan/data/news/knowmem/retain_qa.json",
+        'knowmem_retain_qa_icl_file': "/lus/eagle/projects/PBML/yingdan/data/news/knowmem/retain_qa_icl.json",
     },
     'books': {
-        'verbmem_forget_file': "data/books/verbmem/forget.json",
-        'privleak_forget_file': "data/books/privleak/forget.json",
-        'privleak_retain_file': "data/books/privleak/retain.json",
-        'privleak_holdout_file': "data/books/privleak/holdout.json",
-        'knowmem_forget_qa_file': "data/books/knowmem/forget_qa.json",
-        'knowmem_forget_qa_icl_file': "data/books/knowmem/forget_qa_icl.json",
-        'knowmem_retain_qa_file': "data/books/knowmem/retain_qa.json",
-        'knowmem_retain_qa_icl_file': "data/books/knowmem/retain_qa_icl.json",
+        'verbmem_forget_file': "/lus/eagle/projects/PBML/yingdan/data/books/verbmem/forget.json",
+        'privleak_forget_file': "/lus/eagle/projects/PBML/yingdan/data/books/privleak/forget.json",
+        'privleak_retain_file': "/lus/eagle/projects/PBML/yingdan/data/books/privleak/retain.json",
+        'privleak_holdout_file': "/lus/eagle/projects/PBML/yingdan/data/books/privleak/holdout.json",
+        'knowmem_forget_qa_file': "/lus/eagle/projects/PBML/yingdan/data/books/knowmem/forget_qa.json",
+        'knowmem_forget_qa_icl_file': "/lus/eagle/projects/PBML/yingdan/data/books/knowmem/forget_qa_icl.json",
+        'knowmem_retain_qa_file': "/lus/eagle/projects/PBML/yingdan/data/books/knowmem/retain_qa.json",
+        'knowmem_retain_qa_icl_file': "/lus/eagle/projects/PBML/yingdan/data/books/knowmem/retain_qa_icl.json",
     }
 }
 
