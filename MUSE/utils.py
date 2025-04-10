@@ -39,5 +39,8 @@ def load_model(model_dir: str, **kwargs):
 
 
 def load_tokenizer(tokenizer_dir: str, **kwargs):
+    print('+'*20)
+    print('tokenizer_dir', tokenizer_dir)
+    print('+'*20)
     return AutoTokenizer.from_pretrained(tokenizer_dir, **kwargs)
     
