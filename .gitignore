@@ -29,3 +29,9 @@ muse/data/
 plot/
 plot/figures/
 # *.sh
+
+
+MUSE/pycache/
+MUSE/baselines/baselines/pycache/
+MUSE/data/
+
