@@ -125,7 +125,7 @@ def load_model_and_tokenizer(
     print('+'*20)
     print('tokenizer_dir', tokenizer_dir)
     print('+'*20)
-    
+
     tokenizer = (load_tokenizer(tokenizer_dir, add_pad_token)
                  if tokenizer_dir is not None
                  else None)
