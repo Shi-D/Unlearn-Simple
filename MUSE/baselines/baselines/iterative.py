@@ -30,17 +30,19 @@ def unlearn(
     if 'gd' in loss_type:
         assert retain_data_file is not None, "Retain data must be specified for grad_diff."
 
+    print('load_model_and_tokenizer')
     model, tokenizer = load_model_and_tokenizer(
         model_dir,
         tokenizer_dir=tokenizer_dir
     )
-
+    print('load ref_model')
     ref_model = (
         load_model(model_dir)
         if 'npo' in loss_type or 'kl' in loss_type
         else None
     )
 
+    print('load dataset')
     dataset = ForgetRetainDataset(
         data_file,
         tokenizer=tokenizer,
