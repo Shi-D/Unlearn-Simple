@@ -12,6 +12,8 @@ from os.path import basename, dirname, join as pathjoin
 def main():
     args = get_args()
     print(args.out_dir)
+    print('algo', args.algo)
+
     if args.algo == 'kn':
         raise NotImplementedError()
 
