@@ -104,7 +104,10 @@ def load_tokenizer(
     use_fast: bool = True
 ) -> AutoTokenizer:
     # tokenizer = AutoTokenizer.from_pretrained(tokenizer_dir, use_fast=use_fast)
-    tokenizer = AutoTokenizer.from_pretrained(tokenizer_dir, use_fast=False)
+    tokenizer = AutoTokenizer.from_pretrained(
+        tokenizer_dir,
+        use_fast=True,
+        trust_remote_code=True)
     if add_pad_token:
         tokenizer.pad_token = tokenizer.eos_token
     return tokenizer
