@@ -25,7 +25,24 @@ muse/baselines/baselines/__pycache__/
 muse/metrics/__pycache__/
 muse/temp/
 muse/data/
+MUSE/__pycache__/
+MUSE/baselines/ckpt
+MUSE/__pycache__/
+MUSE/baselines/baselines/__pycache__/
+MUSE/metrics/__pycache__/
+MUSE/temp/
+MUSE/data/
+
 
 plot/
 plot/figures/
 # *.sh
+
+
+MUSE/pycache/
+MUSE/baselines/baselines/pycache/
+MUSE/data/
+
+
+.idea/
+
