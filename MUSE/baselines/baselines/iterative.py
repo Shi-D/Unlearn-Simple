@@ -119,6 +119,8 @@ class IterativeUnlearner(Trainer):
         
         ### 1. Run model ###
         x_f, x_r = x
+        print('x_f[input_ids]', x_f['input_ids'])
+        print('x_f[labels]', x_f['labels'])
         outputs_f = model(
             x_f['input_ids'],
             labels=x_f['labels'] if 'labels' in x_f else x_f['input_ids'].clone(),
