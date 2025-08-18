@@ -83,7 +83,7 @@ def unlearn(
         npo_coeff=npo_coeff,
         gamma=gamma
     )
-
+    print('trainer.args.bf16', trainer.args.bf16, 'trainer.args.fp16', trainer.args.fp16)
     model.config.use_cache = False  # silence the warnings.
     trainer.train(resume_from_checkpoint=resume_from_checkpoint)
     trainer.save_model(out_dir)
