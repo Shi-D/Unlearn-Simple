@@ -32,7 +32,8 @@ def finetune(
         num_train_epochs=epochs,
         optim='adamw_torch',
         lr_scheduler_type='cosine',
-        bf16=True,
+        fp16=True,
+        bf16=False,
         report_to='none'        # Disable wandb
     )
 
