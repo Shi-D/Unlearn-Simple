@@ -7,12 +7,13 @@ from baselines import it_unlearn, tv_unlearn, finetune
 
 import argparse
 from os.path import basename, dirname, join as pathjoin
-
+import torch
 
 def main():
     args = get_args()
     print(args.out_dir)
     print('algo', args.algo)
+    print("Number of available GPUs:", torch.cuda.device_count())
 
     if args.algo == 'kn':
         raise NotImplementedError()
