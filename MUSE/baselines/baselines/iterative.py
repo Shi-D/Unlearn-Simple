@@ -63,8 +63,8 @@ def unlearn(
         num_train_epochs=epochs,
         optim='adamw_torch',
         lr_scheduler_type='constant',
-        bf16=False,
-        fp16=True,
+        # bf16=False,
+        # fp16=True,
         report_to='none',        # Disable wandb
         # gradient_accumulation_steps=4,
         gradient_checkpointing=True,
