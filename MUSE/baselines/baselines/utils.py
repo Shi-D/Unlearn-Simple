@@ -9,8 +9,8 @@ from transformers import AutoModelForCausalLM, AutoTokenizer
 import json
 import re
 
-CACHE_DIR = "/lus/eagle/projects/PBML/yingdan/hf_cache"
-# CACHE_DIR = "/expanse/lustre/projects/iit120/yshi10/hf_cache"
+# CACHE_DIR = "/lus/eagle/projects/PBML/yingdan/hf_cache"
+CACHE_DIR = "/expanse/lustre/projects/iit120/yshi10/hf_cache"
 
 
 def get_rootpath():
