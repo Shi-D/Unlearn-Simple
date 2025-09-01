@@ -124,8 +124,7 @@ class IterativeUnlearner(Trainer):
         
         ### 1. Run model ###
         x_f, x_r = x
-        print('x_f[input_ids]', x_f['input_ids'])
-        print('x_f[labels]', x_f['labels'])
+        print('x_f[input_ids]', x_f['input_ids'].shape, x_f['labels'].shape)
         outputs_f = model(
             x_f['input_ids'],
             labels=x_f['labels'] if 'labels' in x_f else x_f['input_ids'].clone(),
@@ -164,7 +163,7 @@ class IterativeUnlearner(Trainer):
             loss += -loss_f
 
         elif 'npo' in self.loss_type and 'simnpo' not in self.loss_type:
-            print(outputs_f_ref.logits.mean())
+            print('outputs_f_ref.logits.mean(), outputs_f.logits.mean()', outputs_f_ref.logits.mean(), outputs_f.logits.mean())
             neg_log_ratio = outputs_f_ref.logits - outputs_f.logits
             loss += -F.logsigmoid(self.beta * neg_log_ratio).mean() * 2 / self.beta
 
