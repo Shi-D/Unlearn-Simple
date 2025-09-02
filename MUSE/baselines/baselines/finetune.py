@@ -33,7 +33,7 @@ def finetune(
         optim='adamw_torch',
         lr_scheduler_type='cosine',
         # fp16=True,
-        # bf16=False,
+        # bf16=True,
         report_to='none'        # Disable wandb
     )
 

@@ -83,7 +83,6 @@ def unlearn(
         npo_coeff=npo_coeff,
         gamma=gamma
     )
-    print('trainer.args.bf16', trainer.args.bf16, 'trainer.args.fp16', trainer.args.fp16)
     model.config.use_cache = False  # silence the warnings.
     trainer.train(resume_from_checkpoint=resume_from_checkpoint)
     trainer.save_model(out_dir)
@@ -124,7 +123,7 @@ class IterativeUnlearner(Trainer):
         
         ### 1. Run model ###
         x_f, x_r = x
-        print('x_f[input_ids]', x_f['input_ids'].shape, x_f['labels'].shape)
+        print('x_f[input_ids]', x_f['input_ids'].shape, x_f['labels'].shape)  # torch.Size([4, 2048]) torch.Size([4, 2048])
         outputs_f = model(
             x_f['input_ids'],
             labels=x_f['labels'] if 'labels' in x_f else x_f['input_ids'].clone(),
